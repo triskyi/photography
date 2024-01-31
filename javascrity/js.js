@@ -29,3 +29,10 @@ function myFunction(imgs) {
   }
 
   
+  // Initialize lozad
+  const observer = lozad('.lozad', {
+    loaded: function (el) {
+        el.classList.add('fade'); // Optional: Add a fade effect after the image is loaded
+    }
+});
+observer.observe();
