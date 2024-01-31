@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #838a91;
+    background-color: rgb(153, 148, 148);
 
 }
 
@@ -73,18 +73,55 @@ nav.navbar {
 
 }
 
+button.btn {
+    background: linear-gradient(to right, #af4c8c, #4588a0);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    animation: bounce 5s infinite;
+    margin-top: 3rem;
+    /* Slightly faster bouncing animation */
+    transition: background 5s ease-in-out;
+    /* Smooth transition for background color */
+}
+
+button.btn:hover {
+    background: linear-gradient(to right, #4588a0, #af4c8c);
+    /* Change gradient on hover */
+}
+
+
 
 .navbar-toggler {
     float: right;
 }
+
+.animate-from-bottom {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.animate-from-bottom.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 .motto {
     font-size: 2rem;
     color: #333;
     /* Choose your desired color */
     font-weight: bold;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 
 }
 
@@ -92,7 +129,7 @@ nav.navbar {
     display: block;
     width: 400px;
     height: 450px;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 
